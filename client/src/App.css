@@ -1,0 +1,101 @@
+.App {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.temp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5%;
+  min-width: 500px;
+  min-height: 450px;
+  border: 4px solid #e1405d;
+  border-radius: 6%;
+}
+
+h1 {
+  font-size: 30px;
+  color: #e1405d;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.radioo {
+  font-size: larger;
+  font-weight: 800;
+}
+
+
+.numbersCl{
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+  min-height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+  border: 2px solid #e1405d;
+  background-color: #f5dee2;
+  padding-top: 10%;
+  border-radius: 6%;
+}
+.numbersCl input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.numbersCl button {
+  background: #e1405d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.result {
+  min-width: 500px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #e1405d;
+  border: 4px solid #e1405d;
+  background-color: #f5dee2;
+  border-radius: 8%;
+}
+
+@media screen and (max-width: 800px) {
+  .temp{
+    min-width: 320px;
+  }
+  .numbersCl{
+    min-width: 290px;
+  }
+  .result{
+    min-width: 320px;
+    min-height: 200px;
+  }
+}
