@@ -8,7 +8,8 @@
     "runDev": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run runDev\" \"npm run client\"",
-    "start": "cd client && npm install && npm run build && node server.js"
+    "start": "concurrently \"cd client && npm install && npm run build \" \"node server.js\""
+  
   },
   "keywords": [],
   "author": "",
