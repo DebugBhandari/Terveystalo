@@ -6,7 +6,7 @@ import path from 'node:path'
 const app = express();
 const port = process.env.PORT || 5000;
 
-const __dirname = path.resolve(path.dirname('')); 
+
 
 app.use(cors());
 
