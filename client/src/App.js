@@ -11,7 +11,7 @@ function App() {
     if (query) {
       const fetchData = async () => {
         const result = await axios(
-          `http://localhost/myapi/?action=${query.actionQuery}&number${
+          `http://localhost:5000/myapi/?action=${query.actionQuery}&number${
             query.actionQuery === "sumandcheck" ? "s" : ""
           }=${query.numbersQuery}`
         );
