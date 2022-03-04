@@ -3,7 +3,7 @@ import { isPrime, sumFunc } from "./util/numbers.js";
 import cors from 'cors';
 var err = import('express-async-errors');
 const app = express();
-const port = process.env.port || 80;
+const port = process.env.port || 5000;
 
 app.use(cors());
 
