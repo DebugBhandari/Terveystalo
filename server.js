@@ -2,9 +2,11 @@ import express from "express";
 import { isPrime, sumFunc } from "./util/numbers.js";
 import cors from 'cors';
 const err = import('express-async-errors');
-import path from 'path'
+import path from 'node:path'
 const app = express();
 const port = process.env.PORT || 5000;
+
+const __dirname = path.resolve(path.dirname('')); 
 
 app.use(cors());
 
